@@ -1,6 +1,5 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S116FB5)
-
 # Docker OpenTherm Monitor
+forked from basschipper 
 
 ## Introduction
 The Opentherm Monitor is a small utility that is intended to help you configure and monitor your opentherm gateway (OTGW).
