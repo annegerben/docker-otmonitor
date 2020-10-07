@@ -13,7 +13,7 @@ docker run -d -p 7686:7686 -p 7689:7689 -p 8080:8080
 
 ## Usage
 Opentherm Monitor can be found on port 8080
-Domoticz can now connect on port 7686
+Domoticz can now connect on port 7689
 
 ## More info
 - [OpenTherm Monitor](http://otgw.tclcode.com/otmonitor.html)
