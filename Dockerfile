@@ -13,7 +13,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
 
 #The new port that Domoticz needs to use. In Domoticz, set this number as the port under the OTGW hardware
-ENV portNumberForDomoticzToUse=7689		
+ENV portNumberForDomoticzToUse=7689
 #The network port OTGW provides, as can be set under the Configuration parts
 ENV portNumberOfOtMonitor=7686
 #If true: use TC instead of TT (if false, just standard Domoticz TT usage)
@@ -30,6 +30,10 @@ ENV idToUseForReplacement=29
 ENV fieldnumberInPsOutputToReplace=11
 
 COPY otgw.js ./	
+COPY otmonitor.conf ./
 
-#EXPOSE 7777
+EXPOSE 7686
+EXPOSE 7689
+EXPOSE 8080
+
 ENTRYPOINT [ "/entrypoint.sh" ]
