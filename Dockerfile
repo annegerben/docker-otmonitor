@@ -5,6 +5,7 @@ ENV TZ=Europe/Amsterdam
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update && apt-get install -y wget bash libxft2 libxss1 nodejs
 
+# version 5.1 
 RUN mkdir /app && mkdir /data \
   && /usr/bin/wget http://otgw.tclcode.com/download/otmonitor-x64 -O /app/otmonitor \
   && chmod +x /app/otmonitor	
